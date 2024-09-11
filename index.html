@@ -1,0 +1,31 @@
+<style>
+.profile-container { display: flex; flex-direction: column; }
+.profile-content { background-color: #fff; width: 100%; overflow: hidden; padding: 0 29px 31px 0; }
+@media (max-width: 991px) { .profile-content { max-width: 100%; padding-right: 20px; } }
+.profile-info { gap: 20px; display: flex; }
+@media (max-width: 991px) { .profile-info { flex-direction: column; align-items: stretch; gap: 0; } }
+.text-column { display: flex; flex-direction: column; line-height: normal; width: 66%; margin-left: 0; }
+@media (max-width: 991px) { .text-column { width: 100%; } }
+.penguin-details { color: #000; margin: 366px -742px 0 0; font: 400 48px Inter, sans-serif; }
+@media (max-width: 991px) { .penguin-details { max-width: 100%; margin-top: 40px; font-size: 40px; } }
+.image-column { display: flex; flex-direction: column; line-height: normal; width: 34%; margin-left: 20px; }
+@media (max-width: 991px) { .image-column { width: 100%; } }
+.penguin-image { aspect-ratio: 0.96; object-fit: contain; object-position: center; width: 100%; }
+@media (max-width: 991px) { .penguin-image { max-width: 100%; } }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+</style>
+
+<section class="profile-container">
+  <div class="profile-content">
+    <div class="profile-info">
+      <div class="text-column">
+        <p class="penguin-details">
+          学校名：聖光学院中学校高等学校 名前：ジェントルペンギン 年齢：永遠の８歳 身長：170㎝ 体重：60㎏ 趣味・特技：泳ぐこと、ダンス 好きなもの：せんべい チャームポイント：澄んだ瞳 性格：学校のイベントに参加するのが大好きで、ご来場者の方からたくさんかわいがってもらっています。好奇心旺盛なので、あちこちを歩き回っていて出会いたいと思ってもすぐには見つからないかも。とてもシャイですが優しい気遣いができます。
+        </p>
+      </div>
+      <div class="image-column">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/be8d489ded076127b12aebd201b0db7eebb96533e0968cbb5015ef83da809ac9?placeholderIfAbsent=true&apiKey=9703c88990474fe097f4ac8f208b6748" class="penguin-image" alt="ジェントルペンギンのイメージ画像" />
+      </div>
+    </div>
+  </div>
+</section>
